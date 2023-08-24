@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    
+}
+header{
+    height: 100vh;
+    position: relative;
+    padding-left: 6.8rem;
+    padding-top: 16.8rem;
+    background-color: #FFCA29;
+}
+header::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+
+}
+h1{
+    font-family: 'Passero One';
+    font-size: 21.875rem;
+    font-style: normal;
+    font-weight: 20rem;
+    line-height: normal;
+    letter-spacing: -0.96875rem;
+}
+#princ{
+    color: #ffffff;
+    position: absolute;
+    top: 0rem; left:0rem;
+    
+}
+#segund{
+    color: #0014C3;
+    position: absolute;
+    top: 0.5rem; left: -0.5rem;
+}
+#terce{
+    color: #FF7A00;
+    position: absolute;
+    top: 1rem; left: -1rem;
+
+}
+
+span{
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.38rem;
+
+}
+
+.botao{
+    width: 18.75rem;
+    height: 5rem;
+    padding: 1rem 5.25rem;
+    border-radius: 3.125rem;
+    background: #003DDB;
+}
