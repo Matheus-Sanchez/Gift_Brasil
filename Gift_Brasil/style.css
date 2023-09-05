@@ -373,10 +373,7 @@ a:active{
 }
 
 #card{
-    display: flex;
-
-
-    flex-shrink: 0;
+    flex-direction: column;
     border-radius: 3.125rem;
     background: #050040;
 
@@ -393,28 +390,23 @@ a:active{
 }
 
 #comprar{
-    width: 23%;
-    height: 4%;
+    width: 50%;
+    height: 10%;
 
     border-radius: 3.125rem;
     background: #FFAA2B;
 
-    margin-top: 100%;
-    bottom: 90%;
-    left: -30%;
+
+
     
     
 }
 #descricao{
-    margin-top: 70%;
-    bottom: 80%;
-    margin-left: 20%;
+
 }
 
 #preco{
-    margin-top: 45%;
-    bottom: 50%;
-    margin-left: -55%;
+
 }
 
 h3{
