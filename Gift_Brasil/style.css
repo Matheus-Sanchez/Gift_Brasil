@@ -25,6 +25,9 @@ header::before{
 
 
 }
+
+
+
 h1{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Passero One';
@@ -32,6 +35,80 @@ h1{
     font-weight: 400;
     letter-spacing: -2rem;
 }
+p{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passero One';
+    font-size: 5rem;
+    font-weight: 50;
+    letter-spacing: 0rem;
+}
+
+
+#menu{
+    position: fixed;
+    margin-left: -2.5rem;
+    margin-top: -6.5rem;
+    width: 100%;
+    height: 15%;
+    z-index: 5;
+    
+    background: #12D4FF;
+}
+
+.menuIcon{
+    position: fixed;
+    width: 6%;
+    height: 11%;
+    border-radius: 1.3125rem;
+    background: #FBFF34;
+    z-index: 6;
+    margin: 1%;
+}
+
+.barIcon{
+    position: static;
+    width: 70%;
+    height: 9%;
+    border-radius: 0.15625rem;
+    background: #2400FF;
+    margin: 17%;
+}
+#MenuLogo{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    border-radius: 1.875rem;
+    background: #221EFF;
+    left: 9rem;
+    margin-top: 0;
+
+}
+
+#logo1Menu{
+    position:absolute;
+    color: #ffffff;
+    top: 0.5rem; left: 1.5rem;
+    z-index: 3;
+    
+
+}
+#logo2Menu{
+    position: absolute;
+    color: #0014C3;
+    top: 1rem; left: 2rem;
+    z-index: 2;
+ 
+
+}
+#logo3Menu{
+    position:  absolute;
+    color: #FF7A00;
+    top: 1.5rem; left: 2.5rem;
+    z-index: 1;
+
+
+}
+
 
 #Logo{
     
@@ -118,21 +195,22 @@ span{
 
 }
 
-.botao{
-    width: 18.75rem;
-    height: 5rem;
-    padding: 1rem 5.25rem;
-    border-radius: 3.125rem;
-    background: #003DDB;
+a{
+    margin: 2%;
+}
+
+a:active{
+    scroll-behavior: smooth;
 }
 
 .playstation{
     display: flex;
-    width: 18.75rem;
-    height: 5rem;
+    width: auto;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+
     flex-shrink: 0;
     border-radius: 3.125rem;
     border-color:#001AFF;
@@ -141,7 +219,7 @@ span{
     color: #001AFF;
     text-align: center;
     font-family: Arimo Hebrew Subset;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -157,9 +235,9 @@ span{
 
 .xbox{
     display: flex;
-    width: 18.75rem;
-    height: 5rem;
-    padding: 0rem 2rem;
+    width: auto;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -169,7 +247,7 @@ span{
 
     color: #FFF;
     font-family: Inter;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -177,8 +255,8 @@ span{
 
 .nintendo{
     display: flex;
-    width: 18.75rem;
-    height: 5rem;
+    width: auto;
+    height: auto;;
     padding: 0.625rem 2.5625rem;
     justify-content: center;
     align-items: center;
@@ -190,7 +268,7 @@ span{
     color: #FFF;
     text-align: center;
     font-family: Arimo Hebrew Subset;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -198,9 +276,9 @@ span{
 
 .stean{
     display: flex;
-    width: 18.75rem;
-    height: 5rem;
-    padding: 1rem 5.25rem;
+    width: a;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
@@ -211,23 +289,28 @@ span{
     color: #FFF;
     text-align: center;
     font-family: Arimo Hebrew Subset;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .botoes-container{
+    position:absolute;
     display: flex;
-    padding-left: 5rem;
+    align-content: center;
+    justify-content: space-between;
+    margin: 2%;
+    padding-left: 3rem;
     margin-top: 10rem;
     
 }
 .gift-cards{
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: space-between;
-    align-content: space-between;
+    align-content: center;
 
     width: 101.875rem;
     height: 180.4375rem;
@@ -240,7 +323,7 @@ span{
 #cards-Playstation{
     display: flex;
     flex-wrap: wrap;
-    width: 101.875rem;
+    width: 90%;
     height: 180.4375rem;
     border-radius: 8.125rem;
     background: url(<path-to-image>), rgb(0, 119, 255) 50% / cover no-repeat;
@@ -291,13 +374,14 @@ span{
 
 #card{
     display: flex;
-    width: 28.125rem;
-    height: 34.6875rem;
+
+
     flex-shrink: 0;
     border-radius: 3.125rem;
     background: #050040;
 
-    width: calc(30% - 20px);
+    width: calc(25% - 20px);
+    height: 15%;
     margin-left: 2rem;
     margin-top: 5rem;
     
@@ -309,17 +393,16 @@ span{
 }
 
 #comprar{
-    width: 23.4375rem;
-    height: 4.5625rem;
-    flex-shrink: 0;
+    width: 23%;
+    height: 4%;
 
     border-radius: 3.125rem;
     background: #FFAA2B;
 
     margin-top: 100%;
     bottom: 90%;
-
-    transform: translateX(-80%);
+    left: -30%;
+    
     
 }
 #descricao{
