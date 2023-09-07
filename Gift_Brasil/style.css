@@ -5,6 +5,15 @@
     margin: 0;
     
 }
+/*falta
+-colocar variaveis do que aparece com frequencia
+-diminuir o codigo css
+-colocar as imagens
+*/
+:root{
+    
+
+}
 header{
     
     height: 100vh;
@@ -25,6 +34,7 @@ header::before{
 
 
 }
+
 
 
 
@@ -232,6 +242,18 @@ a:active{
     background: #001AFF;
     color: red;
 }
+.xbox:hover{
+    background: #00fa15;
+    color: rgb(255, 211, 211);
+}
+.nintendo:hover{
+    background: #8605a0;
+    color: rgb(163, 0, 0);
+}
+.stean:hover{
+    background: #ff6c17;
+    color: rgb(0, 255, 200);
+}
 
 .xbox{
     display: flex;
@@ -320,59 +342,41 @@ a:active{
     
 }
 
-#cards-Playstation{
+#cards-Playstation, #cards-Xbox, #cards-Nintendo, #cards-Stean{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     height: 180.4375rem;
     border-radius: 8.125rem;
+   
+    margin-left: 2%;
+
+    position: relative;
+    padding: 20px;
+}
+
+#cards-Playstation{
+
     background: url(<path-to-image>), rgb(0, 119, 255) 50% / cover no-repeat;
-    margin-left: 2%;
 
-    position: relative;
-    padding: 20px;
 }
-
 #cards-Xbox{
-    display: flex;
-    flex-wrap: wrap;
-    width: 101.875rem;
-    height: 180.4375rem;
-    border-radius: 8.125rem;
     background: url(<path-to-image>), rgb(0, 255, 0) 50% / cover no-repeat;
-    margin-left: 2%;
 
-    position: relative;
-    padding: 20px;
 }
-
 #cards-Nintendo{
-    display: flex;
-    flex-wrap: wrap;
-    width: 101.875rem;
-    height: 180.4375rem;
-    border-radius: 8.125rem;
-    background: url(<path-to-image>), rgb(245, 8, 8) 50% / cover no-repeat;
-    margin-left: 2%;
 
-    position: relative;
-    padding: 20px;
+    background: url(<path-to-image>), rgb(245, 8, 8) 50% / cover no-repeat;
+
 }
 
 #cards-Stean{
-    display: flex;
-    flex-wrap: wrap;
-    width: 101.875rem;
-    height: 180.4375rem;
-    border-radius: 8.125rem;
-    background: url(<path-to-image>), rgb(37, 37, 37) 50% / cover no-repeat;
-    margin-left: 2%;
 
-    position: relative;
-    padding: 20px;
+    background: url(<path-to-image>), rgb(37, 37, 37) 50% / cover no-repeat;
+
 }
 
-#card{
+#card, #cardsflag{
     flex-direction: column;
     border-radius: 3.125rem;
     background: #050040;
@@ -396,11 +400,9 @@ a:active{
     border-radius: 3.125rem;
     background: #FFAA2B;
 
-
-
-    
-    
 }
+
+
 #descricao{
 
 }
@@ -408,6 +410,20 @@ a:active{
 #preco{
 
 }
+
+
+.mais, .menos{
+    width: 17.0625rem;
+    height: 4.0625rem;
+    border-radius: 50px;
+    background: #FFAA2B;
+    justify-content: center;
+    margin-inline: 40%;
+    text-align:center;
+    
+}
+
+
 
 h3{
     width: 18.1875rem;
