@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    
+}
+/*falta
+-colocar variaveis do que aparece com frequencia
+-diminuir o codigo css
+-colocar as imagens
+*/
+:root{
+    
+
+}
+header{
+    
+    height: 100vh;
+    position: relative;
+    padding-left: 2.5rem;
+    padding-top: 6.5rem;
+    background-color: #FFCA29;
+}
+header::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+
+}
+
+
+
+
+h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passero One';
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: -2rem;
+}
+p{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passero One';
+    font-size: 5rem;
+    font-weight: 50;
+    letter-spacing: 0rem;
+}
+
+
+#menu{
+    position: fixed;
+    margin-left: -2.5rem;
+    margin-top: -6.5rem;
+    width: 100%;
+    height: 15%;
+    z-index: 5;
+    
+    background: #12D4FF;
+}
+
+.menuIcon{
+    position: fixed;
+    width: 6%;
+    height: 11%;
+    border-radius: 1.3125rem;
+    background: #FBFF34;
+    z-index: 6;
+    margin: 1%;
+}
+
+.barIcon{
+    position: static;
+    width: 70%;
+    height: 9%;
+    border-radius: 0.15625rem;
+    background: #2400FF;
+    margin: 17%;
+}
+#MenuLogo{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    border-radius: 1.875rem;
+    background: #221EFF;
+    left: 9rem;
+    margin-top: 0;
+
+}
+
+#logo1Menu{
+    position:absolute;
+    color: #ffffff;
+    top: 0.5rem; left: 1.5rem;
+    z-index: 3;
+    
+
+}
+#logo2Menu{
+    position: absolute;
+    color: #0014C3;
+    top: 1rem; left: 2rem;
+    z-index: 2;
+ 
+
+}
+#logo3Menu{
+    position:  absolute;
+    color: #FF7A00;
+    top: 1.5rem; left: 2.5rem;
+    z-index: 1;
+
+
+}
+
+
+#Logo{
+    
+    border-radius: 3.125rem;
+    background: #00186D;
+    width: 82.25rem;
+    height: 24.25rem;
+}
+
+
+
+#logo1{
+    position: absolute;
+    color: #ffffff;
+    top: 3rem; left:5rem;
+    z-index: 3;
+
+}
+#logo2{
+    position: absolute;
+    color: #0014C3;
+    top: 3.5rem; left: 5.5rem;
+    z-index: 2;
+
+}
+#logo3{
+    position: absolute;
+    color: #FF7A00;
+    top: 4rem; left: 6rem;
+    z-index: 1;
+
+}
+
+#sub1{
+    position: absolute;
+    color: #ffffff;
+    top: 23rem; left:10rem;
+    z-index: 3;
+
+}
+#sub2{
+    position: absolute;
+    color: #0014C3;
+    top: 23.3rem; left: 10.2rem;
+    z-index: 2;
+
+}
+#sub3{
+    position: absolute;
+    color: #FF7A00;
+    top: 23.6rem; left: 10.4rem;
+    z-index: 1;
+
+}
+
+
+#cab1{
+    position: absolute;
+    color: #ffffff;
+    top: 33rem; left:20rem;
+    z-index: 3;
+
+}
+#cab2{
+    position: absolute;
+    color: #0014C3;
+    top: 33.3rem; left: 20.2rem;
+    z-index: 2;
+
+}
+#cab3{
+    position: absolute;
+    color: #FF7A00;
+    top: 33.6rem; left: 20.4rem;
+    z-index: 1;
+
+}
+
+span{
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.38rem;
+
+}
+
+a{
+    margin: 2%;
+}
+
+a:active{
+    scroll-behavior: smooth;
+}
+
+.playstation{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    border-color:#001AFF;
+    background: #FFF;
+
+    color: #001AFF;
+    text-align: center;
+    font-family: Arimo Hebrew Subset;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    
+}
+
+
+.playstation:hover{
+    background: #001AFF;
+    color: red;
+}
+.xbox:hover{
+    background: #00fa15;
+    color: rgb(255, 211, 211);
+}
+.nintendo:hover{
+    background: #8605a0;
+    color: rgb(163, 0, 0);
+}
+.stean:hover{
+    background: #ff6c17;
+    color: rgb(0, 255, 200);
+}
+
+.xbox{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #13F000;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nintendo{
+    display: flex;
+    width: auto;
+    height: auto;;
+    padding: 0.625rem 2.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #F00;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arimo Hebrew Subset;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stean{
+    display: flex;
+    width: a;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #003DDB;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arimo Hebrew Subset;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.botoes-container{
+    position:absolute;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 2%;
+    padding-left: 3rem;
+    margin-top: 10rem;
+    
+}
+.gift-cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-content: center;
+
+    width: 101.875rem;
+    height: 180.4375rem;
+    flex-shrink: 0;
+    border-radius: 8.125rem;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    
+}
+
+#cards-Playstation, #cards-Xbox, #cards-Nintendo, #cards-Stean{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 180.4375rem;
+    border-radius: 8.125rem;
+   
+    margin-left: 2%;
+
+    position: relative;
+    padding: 20px;
+}
+
+#cards-Playstation{
+
+    background: url(<path-to-image>), rgb(0, 119, 255) 50% / cover no-repeat;
+
+}
+#cards-Xbox{
+    background: url(<path-to-image>), rgb(0, 255, 0) 50% / cover no-repeat;
+
+}
+#cards-Nintendo{
+
+    background: url(<path-to-image>), rgb(245, 8, 8) 50% / cover no-repeat;
+
+}
+
+#cards-Stean{
+
+    background: url(<path-to-image>), rgb(37, 37, 37) 50% / cover no-repeat;
+
+}
+
+#card, #cardsflag{
+    flex-direction: column;
+    border-radius: 3.125rem;
+    background: #050040;
+
+    width: calc(25% - 20px);
+    height: 15%;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    
+    position: relative;
+    padding-bottom: 3rem;
+
+
+    padding: 20px;
+}
+
+#comprar{
+    width: 50%;
+    height: 10%;
+
+    border-radius: 3.125rem;
+    background: #FFAA2B;
+
+}
+
+
+#descricao{
+
+}
+
+#preco{
+
+}
+
+
+.mais, .menos{
+    width: 17.0625rem;
+    height: 4.0625rem;
+    border-radius: 50px;
+    background: #FFAA2B;
+    justify-content: center;
+    margin-inline: 40%;
+    text-align:center;
+    
+}
+
+
+
+h3{
+    width: 18.1875rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+
+
+    
+    
+}
+
+h2{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 75%;
+}
+
+
+#produtos{
+    background-color: #8402c0;
+}
