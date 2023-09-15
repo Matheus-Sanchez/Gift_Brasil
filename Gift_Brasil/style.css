@@ -12,6 +12,15 @@
 */
 :root{
     
+    --logo1: #ffffff;
+    --logo2: #0014C3;
+    --logo3: #FF7A00;
+    --fundo1: #FFCA29;
+    --fundo2: #12D4FF;
+    --fundo3: #00186D;
+    --play: #001AFF;
+    --xbox: #13F000;
+    --nintendo: #b60202;
 
 }
 header{
@@ -20,7 +29,7 @@ header{
     position: relative;
     padding-left: 2.5rem;
     padding-top: 6.5rem;
-    background-color: #FFCA29;
+    background-color: var(--fundo1);
 }
 header::before{
     content: '';
@@ -62,7 +71,7 @@ p{
     height: 15%;
     z-index: 5;
     
-    background: #12D4FF;
+    background:var(--fundo2);
 }
 
 .menuIcon{
@@ -70,7 +79,7 @@ p{
     width: 6%;
     height: 11%;
     border-radius: 1.3125rem;
-    background: #FBFF34;
+    background: var(--fundo1);
     z-index: 6;
     margin: 1%;
 }
@@ -80,7 +89,7 @@ p{
     width: 70%;
     height: 9%;
     border-radius: 0.15625rem;
-    background: #2400FF;
+    background: var(--logo2);
     margin: 17%;
 }
 #MenuLogo{
@@ -88,7 +97,7 @@ p{
     width: 35%;
     height: 100%;
     border-radius: 1.875rem;
-    background: #221EFF;
+    background: var(--logo2);
     left: 9rem;
     margin-top: 0;
 
@@ -96,7 +105,7 @@ p{
 
 #logo1Menu{
     position:absolute;
-    color: #ffffff;
+    color: var(--logo1);
     top: 0.5rem; left: 1.5rem;
     z-index: 3;
     
@@ -104,7 +113,7 @@ p{
 }
 #logo2Menu{
     position: absolute;
-    color: #0014C3;
+    color: var(--logo2);
     top: 1rem; left: 2rem;
     z-index: 2;
  
@@ -112,7 +121,7 @@ p{
 }
 #logo3Menu{
     position:  absolute;
-    color: #FF7A00;
+    color: var(--logo3);
     top: 1.5rem; left: 2.5rem;
     z-index: 1;
 
@@ -123,7 +132,7 @@ p{
 #Logo{
     
     border-radius: 3.125rem;
-    background: #00186D;
+    background: var(--fundo3);
     width: 82.25rem;
     height: 24.25rem;
 }
@@ -132,21 +141,21 @@ p{
 
 #logo1{
     position: absolute;
-    color: #ffffff;
+    color: var(--logo1);
     top: 3rem; left:5rem;
     z-index: 3;
 
 }
 #logo2{
     position: absolute;
-    color: #0014C3;
+    color: var(--logo2);
     top: 3.5rem; left: 5.5rem;
     z-index: 2;
 
 }
 #logo3{
     position: absolute;
-    color: #FF7A00;
+    color: var(--logo3);
     top: 4rem; left: 6rem;
     z-index: 1;
 
@@ -154,21 +163,21 @@ p{
 
 #sub1{
     position: absolute;
-    color: #ffffff;
+    color: var(--logo1);
     top: 23rem; left:10rem;
     z-index: 3;
 
 }
 #sub2{
     position: absolute;
-    color: #0014C3;
+    color: var(--logo2);
     top: 23.3rem; left: 10.2rem;
     z-index: 2;
 
 }
 #sub3{
     position: absolute;
-    color: #FF7A00;
+    color: var(--logo3);
     top: 23.6rem; left: 10.4rem;
     z-index: 1;
 
@@ -177,21 +186,21 @@ p{
 
 #cab1{
     position: absolute;
-    color: #ffffff;
+    color: var(--logo1);
     top: 33rem; left:20rem;
     z-index: 3;
 
 }
 #cab2{
     position: absolute;
-    color: #0014C3;
+    color: var(--logo2);
     top: 33.3rem; left: 20.2rem;
     z-index: 2;
 
 }
 #cab3{
     position: absolute;
-    color: #FF7A00;
+    color: var(--logo3);
     top: 33.6rem; left: 20.4rem;
     z-index: 1;
 
@@ -223,10 +232,10 @@ a:active{
 
     flex-shrink: 0;
     border-radius: 3.125rem;
-    border-color:#001AFF;
-    background: #FFF;
+    border-color:var(--logo2);
+    background: var(--logo1);
 
-    color: #001AFF;
+    color: var(--logo2);
     text-align: center;
     font-family: Arimo Hebrew Subset;
     font-size: 2rem;
@@ -239,7 +248,7 @@ a:active{
 
 
 .playstation:hover{
-    background: #001AFF;
+    background: var(--play);
     color: red;
 }
 .xbox:hover{
@@ -265,9 +274,9 @@ a:active{
     gap: 0.5rem;
     flex-shrink: 0;
     border-radius: 3.125rem;
-    background: #13F000;
+    background: var(--xbox);
 
-    color: #FFF;
+    color: var(--logo1);
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -285,7 +294,7 @@ a:active{
     gap: 0.625rem;
     flex-shrink: 0;
     border-radius: 3.125rem;
-    background: #F00;
+    background: var(--nintendo);
 
     color: #FFF;
     text-align: center;
