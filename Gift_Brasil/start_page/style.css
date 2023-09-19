@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Staatliches&display=swap');
+
+
+*{
+    margin: 0;
+    
+}
+/*falta
+-colocar variaveis do que aparece com frequencia
+-diminuir o codigo css
+-colocar as imagens
+*/
+:root{
+    
+    --logo1: #ffffff;
+    --logo2: #0014C3;
+    --logo3: #FF7A00;
+    --fundo1: #FFCA29;
+    --fundo2: #12bcff;
+    --fundo3: #062594;
+    --play: #003DDB;
+    --playL: ;
+    --xbox: #13F000;
+    --xboxL: #d3d3d3;
+    --nintendo: #b60202;
+    --nintendoL: ;
+    --stean: #003DDB;
+    --steanL: #262626;
+    --back: #8402c0;
+}
+header{
+    
+    height: 100vh;
+    position: relative;
+    padding-left: 2.5rem;
+    padding-top: 6.5rem;
+    background-color: var(--fundo1);
+}
+header::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+
+}
+
+
+
+
+h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passero One';
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: -2rem;
+}
+h2{
+    color: var();
+    font-family: Roboto;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 75%;
+}
+h3{
+    width: 18.1875rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+
+    color: var(--logo1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+
+
+    
+    
+}
+
+
+p{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Passero One';
+    font-size: 5rem;
+    font-weight: 50;
+    letter-spacing: 0rem;
+}
+
+
+#menu{
+    position: fixed;
+    margin-left: -2.5rem;
+    margin-top: -6.5rem;
+    width: 100%;
+    height: 15%;
+    z-index: 5;
+    
+    background:var(--fundo2);
+}
+
+.menuIcon{
+    position: fixed;
+    width: 6%;
+    height: 11%;
+    border-radius: 1.3125rem;
+    background: var(--fundo1);
+    z-index: 6;
+    margin: 1%;
+}
+
+.barIcon{
+    position: static;
+    width: 70%;
+    height: 9%;
+    border-radius: 0.15625rem;
+    background: var(--logo2);
+    margin: 17%;
+}
+#MenuLogo{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    border-radius: 1.875rem;
+    background: var(--logo2);
+    left: 9rem;
+    margin-top: 0;
+
+}
+
+#logo1Menu{
+    position:absolute;
+    color: var(--logo1);
+    top: 0.5rem; left: 1.5rem;
+    z-index: 3;
+    
+
+}
+
+#logo2Menu{
+    position: absolute;
+    color: var(--logo2);
+    top: 1rem; left: 2rem;
+    z-index: 2;
+ 
+
+}
+#logo3Menu{
+    position:  absolute;
+    color: var(--logo3);
+    top: 1.5rem; left: 2.5rem;
+    z-index: 1;
+
+
+}
+
+
+#Logo{
+    
+    border-radius: 3.125rem;
+    background: var(--fundo3);
+    width: 82.25rem;
+    height: 24.25rem;
+}
+
+
+
+#logo1{
+    position: absolute;
+    color: var(--logo1);
+    top: 3rem; left:5rem;
+    z-index: 3;
+
+}
+#logo2{
+    position: absolute;
+    color: var(--logo2);
+    top: 3.5rem; left: 5.5rem;
+    z-index: 2;
+
+}
+#logo3{
+    position: absolute;
+    color: var(--logo3);
+    top: 4rem; left: 6rem;
+    z-index: 1;
+
+}
+
+#sub1{
+    position: absolute;
+    color: var(--logo1);
+    top: 23rem; left:10rem;
+    z-index: 3;
+
+}
+#sub2{
+    position: absolute;
+    color: var(--logo2);
+    top: 23.3rem; left: 10.2rem;
+    z-index: 2;
+
+}
+#sub3{
+    position: absolute;
+    color: var(--logo3);
+    top: 23.6rem; left: 10.4rem;
+    z-index: 1;
+
+}
+
+
+#cab1{
+    position: absolute;
+    color: var(--logo1);
+    top: 33rem; left:20rem;
+    z-index: 3;
+
+}
+#cab2{
+    position: absolute;
+    color: var(--logo2);
+    top: 33.3rem; left: 20.2rem;
+    z-index: 2;
+
+}
+#cab3{
+    position: absolute;
+    color: var(--logo3);
+    top: 33.6rem; left: 20.4rem;
+    z-index: 1;
+
+}
+
+span{
+    font-family: 'Staatliches';
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.38rem;
+
+}
+
+a{
+    margin: 2%;
+}
+
+a:active{
+    scroll-behavior: smooth;
+}
+.playstation, .xbox, .nintendo, .stean{
+    display: flex;
+    width: a;
+    height: auto;
+    padding: 0.625rem 2.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    text-align: center;
+    font-family: Arimo Hebrew Subset;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.playstation{
+    background: var(--logo1);
+}
+
+.xbox{
+    background: var(--xbox);
+    color: var(--logo1);
+}
+
+.nintendo{
+    border-radius: 3.125rem;
+    background: var(--nintendo);
+}
+
+.stean{
+    background: var(--stean);
+    color: var(--logo1);
+}
+
+.playstation:hover{
+    background: var(--logo2);
+    color: var(--fundo2);
+}
+
+.xbox:hover{
+    background: var(--xboxL);
+    color: var(--xbox);
+}
+.nintendo:hover{
+    background: var(--logo2);
+    color: var(--nintendo);
+}
+.stean:hover{
+    background: var(--fundo1);
+    color: var(--logo2);
+}
+
+.botoes-container{
+    position:absolute;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 2%;
+    padding-left: 3rem;
+    margin-top: 10rem;
+    
+}
+.gift-cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-content: center;
+
+    width: 101.875rem;
+    height: 180.4375rem;
+    flex-shrink: 0;
+    border-radius: 8.125rem;
+    background: url(<path-to-image>), var(--xboxL) 50% / cover no-repeat;
+    
+}
+
+#cards-Playstation, #cards-Xbox, #cards-Nintendo, #cards-Stean{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 180.4375rem;
+    border-radius: 8.125rem;
+   
+    margin-left: 2%;
+
+    position: relative;
+    padding: 20px;
+}
+
+#cards-Playstation{
+
+    background: url(<path-to-image>), var(--play) 50% / cover no-repeat;
+
+}
+#cards-Xbox{
+    background: url(<path-to-image>), var(--xbox) 50% / cover no-repeat;
+
+}
+#cards-Nintendo{
+
+    background: url(<path-to-image>), var(--nintendo) 50% / cover no-repeat;
+
+}
+
+#cards-Stean{
+
+    background: url(<path-to-image>), var(--steanL) 50% / cover no-repeat;
+
+}
+
+#card{
+    border-radius: 3.125rem;
+    background: var(--fundo3);
+    width: calc(25% - 20px);
+    height: 15%;
+    margin-inline: 2rem;
+    margin-top: 5rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#comprar{
+    width: 50%;
+    height: 10%;
+
+    border-radius: 3.125rem;
+    background: var(--logo3);
+
+}
+
+
+#descricao{
+    margin: 20% 0;
+}
+
+#preco{
+    margin-top: -95%;
+}
+
+
+
+
+#produtos{
+    background-color: var(--back);
+}
+
+#form-quest{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+
+    background-color: #c100fc;
+
+    max-width: 500px;
+
+    border-radius: .5rem;
+
+    padding: 2rem;
+
+    margin: 2rem auto;
+
+}
+
+ 
+
+.compras {
+
+    display: grid;
+    
+
+    flex-direction: column;
+
+    color: rgb(255, 102, 0);
+
+}
+
+ 
+
+.linha {
+
+    grid-column: 1 / 3;
+
+    color: rgb(5, 21, 255);
+
+}
+
+/*
+antes: 520 linhas
+depois:
+*/
+
+#matheus-card{
+    margin-top: 8%;
+    width: 300px;
+    height: 470px;
+    background-color: #0014C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-descricao{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
